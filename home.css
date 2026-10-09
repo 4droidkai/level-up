@@ -2027,36 +2027,41 @@ body.section-open {
    PHOTO GALLERY
 ========================= */
 
-.photo-gallery {
 
+.photo-gallery {
     width: min(900px, 90%);
 
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+        repeat(3, 1fr);
 
     gap: 35px;
 
     margin-top: 20px;
 }
 
-
 .photo {
-    width: 390px;
-    height: 230px;
+    width: 320px;
+    height: 200px;
 
     background: #fff;
+
     padding: 10px;
+
     border-radius: 16px;
 
-    box-shadow: 0 10px 25px rgba(120, 70, 90, 0.12);
+    box-shadow:
+        0 10px 25px
+        rgba(120,70,90,0.12);
 
     overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .photo img,
@@ -2067,32 +2072,27 @@ body.section-open {
     object-fit: cover;
 
     display: block;
+
     border-radius: 10px;
 }
 
-
 .photo:hover {
-
     transform:
         rotate(0deg)
         scale(1.04);
 }
 
-
 .photo-one {
     transform: rotate(-4deg);
 }
-
 
 .photo-two {
     transform: rotate(3deg);
 }
 
-
 .photo-three {
     transform: rotate(2deg);
 }
-
 
 .photo-four {
     transform: rotate(-3deg);
